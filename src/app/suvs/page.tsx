@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 const page = () => {
     const suvsData = [
@@ -14,8 +15,14 @@ const page = () => {
   return (
     <div className="suvs grid grid-cols-1 md:grid-cols-3 gap-10 px-10 my-10">
         {suvsData.map(suvs => (
-            <div key={suvs.id} className="suvs-card bg-white p-5 rounded-md shadow-md text-center">
-             <img src={suvs.image} alt={suvs.name} className="w-full rounded-md transition-transform duration-300 transform hover-scale-110" />
+            <div key={suvs.id} className="suvs-card bg-white p-5 rounded-md shadow-md text-center">             
+             <Image
+              src={suvs.image}
+              alt={suvs.name}
+              width={500}
+              height={300} 
+              className="w-full rounded-md transition-transform duration-300 transform hover:scale-110"
+            />                          
              <h3 className="mt-4 text-2xl font-bold">{suvs.name}</h3>    
              <p className="text-gray-500">{suvs.description}</p>
              <div className="price text-blue-500 text-xl font-semibold mt-2">${suvs.price}</div>

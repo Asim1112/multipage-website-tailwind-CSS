@@ -25,7 +25,7 @@ return (
     <nav className="hidden md:flex gap-10 text-white font-bold">
         <Link href="/" onClick={closeMenu}>Home</Link>
         <Link href="/about" onClick={closeMenu}>About</Link>
-        <Link href="/suvs" onClick={closeMenu}>Suv's</Link>
+        <Link href="/suvs" onClick={closeMenu}>Suv&apos;s</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>
         <FaShoppingCart className="text-white text-xl" />
     </nav>
@@ -58,7 +58,7 @@ return (
     <nav className="flex flex-row items-center gap-3 text-white font-bold">
         <Link href="/" onClick={closeMenu}>Home</Link>
         <Link href="/about" onClick={closeMenu}>About</Link>
-        <Link href="/suvs" onClick={closeMenu}>Suv's</Link>
+        <Link href="/suvs" onClick={closeMenu}>Suv&apos;s</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>
         <FaShoppingCart className="text-white text-xl" />
     </nav>
