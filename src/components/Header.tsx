@@ -19,7 +19,7 @@ const closeMenu = () => {
 
 return (
     <header className="bg-blue-500 text-white py-5 flex justify-between items-center px-10 relative z-10">
-        <h1 className="text-2xl font-bold">Watch World</h1>
+        <h1 className="text-3xl font-bold">URBAN ROVER</h1>
     
     {/* Desktop navbar */}
     <nav className="hidden md:flex gap-10 text-white font-bold">
